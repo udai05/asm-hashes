@@ -15,6 +15,8 @@ fn main() {
     } else if target_arch == "aarch64" {
         build256.flag("-march=armv8-a+crypto");
         ("src/sha256_aarch64.S", "")
+    } else if target_arch == "s390x" {
+        ("src/sha256_systemz.S", "src/sha512_systemz.S")
     } else {
         panic!("Unsupported target architecture");
     };

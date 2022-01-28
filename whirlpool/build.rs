@@ -5,6 +5,8 @@ fn main() {
         "src/x86.S"
     } else if target_arch == "x86_64" {
         "src/x64.S"
+    } else if target_arch == "s390x" {
+        "src/systemz.S"
     } else {
         panic!("Unsupported target architecture");
     };

@@ -9,8 +9,8 @@
 //! [`whirlpool`]: https://crates.io/crates/whirlpool
 
 #![no_std]
-#[cfg(not(any(target_arch = "x86_64", target_arch = "x86")))]
-compile_error!("crate can only be used on x86 and x86-64 architectures");
+#[cfg(not(any(target_arch = "x86_64", target_arch = "x86", target_arch = "s390x")))]
+compile_error!("crate can only be used on x86, x86-64 and s390x architectures");
 
 #[link(name = "whirlpool", kind = "static")]
 extern "C" {

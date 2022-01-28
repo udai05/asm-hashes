@@ -9,8 +9,8 @@
 //! [`sha-1`]: https://crates.io/crates/sha-1
 
 #![no_std]
-#[cfg(not(any(target_arch = "x86_64", target_arch = "x86", target_arch = "aarch64")))]
-compile_error!("crate can only be used on x86, x86_64 and AArch64 architectures");
+#[cfg(not(any(target_arch = "x86_64", target_arch = "x86", target_arch = "aarch64", target_arch = "s390x")))]
+compile_error!("crate can only be used on x86, x86_64, AArch64 and s390x architectures");
 
 #[link(name = "sha1", kind = "static")]
 extern "C" {

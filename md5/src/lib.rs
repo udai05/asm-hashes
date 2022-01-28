@@ -9,8 +9,8 @@
 //! [`md5`]: https://crates.io/crates/md5
 
 #![no_std]
-#[cfg(not(any(target_arch = "x86_64", target_arch = "x86")))]
-compile_error!("crate can only be used on x86 and x86-64 architectures");
+#[cfg(not(any(target_arch = "x86_64", target_arch = "x86", target_arch = "s390x")))]
+compile_error!("crate can only be used on x86, x86-64 and s390xarchitectures");
 
 #[link(name = "md5", kind = "static")]
 extern "C" {
