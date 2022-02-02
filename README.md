@@ -16,7 +16,7 @@ All crates are tested on the following platforms:
 - Linux (32-bit and 64-bit x86)
 - Windows (64-bit x86, GNU only)
 - ARM64 (except `md5`, which is x86 only)
-- s390x (*Adding*)
+- s390x
 
 Windows MSVC builds are known to be broken. See [#17].
 
