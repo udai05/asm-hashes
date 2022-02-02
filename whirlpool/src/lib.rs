@@ -3,7 +3,7 @@
 //! This crate is not intended for direct use, most users should
 //! prefer the [`whirlpool`] crate with enabled `asm` feature instead.
 //!
-//! Only x86 and x86-64 architectures are currently supported.
+//! Only x86, x86-64 and s390x architectures are currently supported.
 //!
 //! [Whirlpool]: https://en.wikipedia.org/wiki/Whirlpool_(cryptography)
 //! [`whirlpool`]: https://crates.io/crates/whirlpool

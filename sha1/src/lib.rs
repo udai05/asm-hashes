@@ -3,7 +3,7 @@
 //! This crate is not intended for direct use, most users should
 //! prefer the [`sha-1`] crate with enabled `asm` feature instead.
 //!
-//! Only x86, x86-64, and AArch64 architectures are currently supported.
+//! Only x86, x86-64, AArch64 and s390x  architectures are currently supported.
 //!
 //! [SHA-1]: https://en.wikipedia.org/wiki/SHA-1
 //! [`sha-1`]: https://crates.io/crates/sha-1
